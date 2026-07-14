@@ -1,4 +1,4 @@
-name: RECOVERY
+11name: RECOVERY
 
 on:
   workflow_dispatch:
@@ -21,10 +21,10 @@ jobs:
         sudo apt install git wget lz4 tar openssl python3 -y
 
     - name: Fetch image from URL
-      run: |
+      run: |https://filebin.net/k0peejjdfgy6g3r0
         ls
         pwd
-        wget ${{ github.event.inputs.RECOVERY_URL }} -O https://filebin.net/k0peejjdfgy6g3r0
+        wget ${{ github.event.inputs.https://RECOVERY_URL}} -O recovery.img
 
     - name: Patch Process-1
       run: |
